@@ -1,15 +1,11 @@
-name: CI
+name: Release
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+  release:
+    types: [published]
 
 jobs:
-  build-and-test:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -21,14 +17,16 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Clean install dependencies
-        run: |
-          rm -rf node_modules
-          rm -f package-lock.json
-          npm install
+      - name: Install dependencies
+        run: npm install
 
       - name: Build the project
         run: npm run build
 
       - name: Run tests
         run: npm test
+
+      - name: Publish to npm
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
