@@ -30,5 +30,8 @@ jobs:
       - name: Build the project
         run: npm run build
 
+      - name: Build for browser
+        run: npm run build:browser
+
       - name: Run tests
         run: npm test
