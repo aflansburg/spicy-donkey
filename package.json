@@ -1,0 +1,19 @@
+{
+  "name": "spicy-donkey",
+  "version": "1.0.0",
+  "description": "Random name generator with extensive adjective & noun dictionaries",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc && node build-scripts/copyData.js"
+  },
+  "author": "Abe Flansburg (@aflansburg)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.0.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.3",
+    "typescript": "^5.5.4"
+  }
+}
