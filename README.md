@@ -79,6 +79,10 @@ console.log(generateRandomCombination('serious', 'animal'));
 console.log(generateRandomCombination('humorous', 'car'));
 ```
 
+## Adding data
+
+Notice that noun json is all stored in files ending in the plural `s`. For the time being, be sure that your noun set ends in `s`.
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.

@@ -1,8 +1,8 @@
 import * as fs from 'fs';
 import * as path from 'path';
 
-type AdjectiveType = 'serious' | 'humorous';
-type NounType = 'car' | 'animal';
+type AdjectiveType = 'serious' | 'humorous' | 'celestial';
+type NounType = 'car' | 'animal' | 'star';
 
 function loadJson(filePath: string): string[] {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
