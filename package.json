@@ -13,6 +13,10 @@
     "donkey"
   ],
   "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aflansburg/spicy-donkey"
+  },
   "scripts": {
     "test": "jest",
     "build": "tsc && node build-scripts/copyData.js"
