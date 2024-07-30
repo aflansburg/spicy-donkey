@@ -12,7 +12,7 @@
     "spicy",
     "donkey"
   ],
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "jest",
     "build": "tsc && node build-scripts/copyData.js"

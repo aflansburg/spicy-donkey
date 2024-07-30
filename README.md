@@ -2,6 +2,32 @@
 
 A random name generator as seen on Reddit, Heroku, Xbox, etc. This project generates random combinations of adjectives and nouns to create unique and fun names.
 
+## Installation
+
+```sh
+npm install spciy-donkey
+```
+
+## Usage
+
+### CommonJS (`require`)
+
+```javascript
+const { generateRandomCombination } = require('spicy-donkey');
+
+const name = generateRandomCombination('humorous', 'animal');
+console.log(name); // Outputs a random combination e.g. "Spicy Donkey"
+```
+
+### ES6 Module (import)
+
+```javascript
+import { generateRandomCombination, AdjectiveType, NounType } from 'spicy-donkey';
+
+const name = generateRandomCombination('celestial' as AdjectiveType, 'star' as NounType);
+console.log(name);// Outputs a random combination e.g. "Colossal Orion"
+```
+
 ## How It Works
 
 The generator uses predefined lists of adjectives and nouns stored in JSON files. It randomly selects one adjective and one noun to create a combination. The types of adjectives and nouns can be specified to generate different styles of names.
