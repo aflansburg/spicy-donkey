@@ -6,3 +6,8 @@ console.log(generateRandomCombination('humorous', 'animal'));
 console.log(generateRandomCombination('serious', 'car'));
 console.log(generateRandomCombination('serious', 'animal'));
 console.log(generateRandomCombination('humorous', 'car'));
+console.log(generateRandomCombination('celestial', 'star'));
+console.log(generateRandomCombination('celestial', 'car'));
+console.log(generateRandomCombination('celestial', 'animal'));
+console.log(generateRandomCombination('humorous', 'star'));
+console.log(generateRandomCombination('serious', 'star'));

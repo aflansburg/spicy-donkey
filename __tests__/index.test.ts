@@ -26,4 +26,51 @@ describe('generateRandomCombination', () => {
     expect(result1).toBeTruthy();
     expect(result2).toBeTruthy();
   });
+
+  it('should handle celestial adjectives and star nouns', () => {
+    const result = generateRandomCombination('celestial', 'star');
+    const [adjective, ...nounParts] = result.split(' ');
+    const noun = nounParts.join(' ');
+    expect(adjective).toBeTruthy();
+    expect(noun).toBeTruthy();
+  });
+
+  it('should return different combinations for celestial adjectives and star nouns', () => {
+    const result1 = generateRandomCombination('celestial', 'star');
+    const result2 = generateRandomCombination('celestial', 'star');
+    expect(result1).not.toBe(result2);
+  });
+
+  // New test cases for various combinations
+  it('should handle celestial adjectives and animal nouns', () => {
+    const result = generateRandomCombination('celestial', 'animal');
+    const [adjective, ...nounParts] = result.split(' ');
+    const noun = nounParts.join(' ');
+    expect(adjective).toBeTruthy();
+    expect(noun).toBeTruthy();
+  });
+
+  it('should handle celestial adjectives and car nouns', () => {
+    const result = generateRandomCombination('celestial', 'car');
+    const [adjective, ...nounParts] = result.split(' ');
+    const noun = nounParts.join(' ');
+    expect(adjective).toBeTruthy();
+    expect(noun).toBeTruthy();
+  });
+
+  it('should handle serious adjectives and star nouns', () => {
+    const result = generateRandomCombination('serious', 'star');
+    const [adjective, ...nounParts] = result.split(' ');
+    const noun = nounParts.join(' ');
+    expect(adjective).toBeTruthy();
+    expect(noun).toBeTruthy();
+  });
+
+  it('should handle humorous adjectives and star nouns', () => {
+    const result = generateRandomCombination('humorous', 'star');
+    const [adjective, ...nounParts] = result.split(' ');
+    const noun = nounParts.join(' ');
+    expect(adjective).toBeTruthy();
+    expect(noun).toBeTruthy();
+  });
 });

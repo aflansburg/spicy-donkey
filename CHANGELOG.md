@@ -11,3 +11,9 @@ All notable changes to this project will be documented in this file.
 - Demo script to showcase the usage of the name generator.
 - Basic test suite to ensure the correctness of the name generator.
 - CI workflow for building and testing the project.
+
+## [1.1.0] - 2024-07-29
+
+- Adds 'stars' nouns and 'celestial' adjectives
+- Updates README.md with 'Data' section
+- Updates types for `NounType` and `AdjectiveType`

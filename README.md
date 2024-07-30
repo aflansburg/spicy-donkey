@@ -6,6 +6,22 @@ A random name generator as seen on Reddit, Heroku, Xbox, etc. This project gener
 
 The generator uses predefined lists of adjectives and nouns stored in JSON files. It randomly selects one adjective and one noun to create a combination. The types of adjectives and nouns can be specified to generate different styles of names.
 
+## Example output
+
+You can run `npm run build && node demo/demo.js` to see the random output:
+
+```
+Comical TibetanMastiff
+Observant Ford Explorer
+Perceptive Dunnart
+Bonkers Tesla Model S
+Vibrant Homam
+Ferocious Genesis GV80
+Bursting Echidna
+Nincompoopish Achird
+Logical 41 Orionis
+```
+
 ## Building Locally
 
 To build and run the project locally, follow these steps:
@@ -40,8 +56,8 @@ node demo/demo.js
 
 The main function `generateRandomCombination` accepts two arguments:
 
-- `adjectiveType`: The type of adjective to use. Can be either `'serious'` or `'humorous'`.
-- `nounType`: The type of noun to use. Can be either `'car'` or `'animal'`.
+- `adjectiveType`: The type of adjective to use. Can be either `'serious'`, `'humorous'`, or `'celestial'`.
+- `nounType`: The type of noun to use. Can be either `'car'`, `'animal'`, `'star'`.
 
 Example usage:
 
@@ -78,6 +94,10 @@ console.log(generateRandomCombination('serious', 'car'));
 console.log(generateRandomCombination('serious', 'animal'));
 console.log(generateRandomCombination('humorous', 'car'));
 ```
+
+## Adding data
+
+Notice that noun json is all stored in files ending in the plural `s`. For the time being, be sure that your noun set ends in `s`.
 
 ## License
 
