@@ -55,7 +55,6 @@ To build and run the project locally, follow these steps:
 1. **Clone the repository:**
 
 ```sh
-sh
 git clone https://github.com/yourusername/spicy-donkey.git
 cd spicy-donkey
 ```
