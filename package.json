@@ -2,6 +2,16 @@
   "name": "spicy-donkey",
   "version": "1.0.0",
   "description": "Random name generator with extensive adjective & noun dictionaries",
+  "keywords": [
+    "random",
+    "name",
+    "generator",
+    "adjective",
+    "noun",
+    "dictionary",
+    "spicy",
+    "donkey"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "jest",
