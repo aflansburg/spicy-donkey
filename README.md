@@ -5,7 +5,7 @@ A random name generator as seen on Reddit, Heroku, Xbox, etc. This project gener
 ## Installation
 
 ```sh
-npm install spciy-donkey
+npm install spicy-donkey
 ```
 
 ## Usage
