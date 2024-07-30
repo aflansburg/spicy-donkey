@@ -1,3 +1,6 @@
+![npm version](https://img.shields.io/npm/v/spicy-donkey)
+![CI status](https://img.shields.io/github/check-runs/aflansburg/spicy-donkey/main?nameFilter=build-and-test&label=build%2Btests)
+
 # Spicy Donkey
 
 A random name generator as seen on Reddit, Heroku, Xbox, etc. This project generates random combinations of adjectives and nouns to create unique and fun names.
