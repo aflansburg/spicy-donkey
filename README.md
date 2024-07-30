@@ -127,6 +127,14 @@ console.log(generateRandomCombination('humorous', 'car'));
 
 Notice that noun json is all stored in files ending in the plural `s`. For the time being, be sure that your noun set ends in `s`.
 
+## Building for browser
+
+This projects includes a script to build for the browser
+
+```sh
+npm build:browser
+```
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
