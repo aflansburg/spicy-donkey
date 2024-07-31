@@ -14,7 +14,7 @@ function copyFolderSync(from, to) {
 }
 
 const srcDir = path.join(__dirname, '..', 'data');
-const destDir = path.join(__dirname, '..', '..', 'public', 'data');
+const destDir = path.join(__dirname, '..', '..', '..', 'public', 'data');
 
 // Check if the environment is a client-side application
 const nextConfigFiles = [
@@ -26,8 +26,8 @@ const nextConfigFiles = [
 
 const isClientSide =
   nextConfigFiles.some((file) =>
-    fs.existsSync(path.join(__dirname, '..', file)),
-  ) || fs.existsSync(path.join(__dirname, '..', 'public'));
+    fs.existsSync(path.join(__dirname, '..', '..', '..', file)),
+  ) || fs.existsSync(path.join(__dirname, '..', '..', '..', 'public'));
 
 if (isClientSide) {
   copyFolderSync(srcDir, destDir);
