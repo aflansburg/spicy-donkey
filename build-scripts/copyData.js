@@ -15,9 +15,7 @@ function copyFolderSync(from, to) {
 
 const srcDir = path.join(__dirname, '..', 'data');
 const destDirDist = path.join(__dirname, '..', 'dist', 'data');
-const destDirPublic = path.join(__dirname, '..', 'public', 'data');
 
 copyFolderSync(srcDir, destDirDist);
-copyFolderSync(srcDir, destDirPublic);
 
 console.log('Data files copied to dist and public directories');
