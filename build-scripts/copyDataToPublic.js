@@ -13,11 +13,9 @@ function copyFolderSync(from, to) {
   });
 }
 
-const srcDir = path.join(__dirname, '..', 'data');
-const destDirDist = path.join(__dirname, '..', 'dist', 'data');
-const destDirPublic = path.join(__dirname, '..', 'public', 'data');
+const srcDir = path.join(__dirname, '..', 'dist', 'data');
+const destDir = path.join(__dirname, '..', '..', 'public', 'data');
 
-copyFolderSync(srcDir, destDirDist);
-copyFolderSync(srcDir, destDirPublic);
+copyFolderSync(srcDir, destDir);
 
-console.log('Data files copied to dist and public directories');
+console.log('Data files copied to public directory');

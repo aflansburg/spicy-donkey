@@ -20,7 +20,8 @@
   "scripts": {
     "test": "jest",
     "build": "tsc && node build-scripts/copyData.js",
-    "build:browser": "webpack --config webpack.config.js"
+    "build:browser": "webpack --config webpack.config.js",
+    "postinstall": "node build-scripts/copyDataToPublic.js"
   },
   "author": "Abe Flansburg (@aflansburg)",
   "license": "MIT",
@@ -34,5 +35,9 @@
     "typescript": "^5.5.4",
     "webpack": "^5.93.0",
     "webpack-cli": "^5.1.4"
-  }
+  },
+  "files": [
+    "dist",
+    "dist/data"
+  ]
 }
