@@ -18,4 +18,4 @@ const destDirDist = path.join(__dirname, '..', 'dist', 'data');
 
 copyFolderSync(srcDir, destDirDist);
 
-console.log('Data files copied to dist and public directories');
+console.log('Data files copied to dist directory');

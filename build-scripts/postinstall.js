@@ -14,8 +14,16 @@ function copyFolderSync(from, to) {
 }
 
 const srcDir = path.join(__dirname, '..', 'data');
-const destDir = path.join(__dirname, '..', 'public', 'data');
+const destDir = path.join(__dirname, '..', '..', 'public', 'data');
 
-copyFolderSync(srcDir, destDir);
+// Check if the environment is a client-side application
+const isClientSide =
+  fs.existsSync(path.join(__dirname, '..', 'next.config.js')) ||
+  fs.existsSync(path.join(__dirname, '..', 'public'));
 
-console.log('Data files copied to public directory');
+if (isClientSide) {
+  copyFolderSync(srcDir, destDir);
+  console.log('Data files copied to public directory');
+} else {
+  console.log('Skipping copying data files to public directory');
+}
