@@ -21,9 +21,6 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Copy data to public directory
-        run: node build-scripts/copyDataToPublic.js
-
       - name: Clean install dependencies
         run: |
           rm -rf node_modules
@@ -32,6 +29,9 @@ jobs:
 
       - name: Build the project
         run: npm run build
+
+      - name: Copy data to public directory
+        run: node build-scripts/copyDataToPublic.js
 
       - name: Build for browser
         run: npm run build:browser
